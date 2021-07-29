@@ -1,3 +1,0 @@
-﻿  source.cpp
-C:\Users\94hsk\Desktop\coding_test\2020_kakao_intership_01\2020_kakao_intership_01\source.cpp(37,12): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'std::string'입니다.
-  2020_kakao_intership_01.vcxproj -> C:\Users\94hsk\Desktop\coding_test\2020_kakao_intership_01\Debug\2020_kakao_intership_01.exe
