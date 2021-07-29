@@ -1,24 +1,26 @@
 #include <string>
 #include <vector>
+#include<iostream>
 using namespace std;
 
 string solution(vector<int> numbers, string hand);
 
 int main(void) {
     vector<int> list;
-    list.push_back(1);
-    list.push_back(3);
-    list.push_back(4);
-    list.push_back(5);
-    list.push_back(8);
-    list.push_back(2);
-    list.push_back(1);
-    list.push_back(4);
-    list.push_back(5);
-    list.push_back(9);
-    list.push_back(5);
 
-    /*list.push_back(7);
+    //list.push_back(1);
+    //list.push_back(3);
+    //list.push_back(4);
+    //list.push_back(5);
+    //list.push_back(8);
+    //list.push_back(2);
+    //list.push_back(1);
+    //list.push_back(4);
+    //list.push_back(5);
+    //list.push_back(9);
+    //list.push_back(5);
+
+    list.push_back(7);
     list.push_back(0);
     list.push_back(8);
     list.push_back(2);
@@ -28,19 +30,18 @@ int main(void) {
     list.push_back(5);
     list.push_back(7);
     list.push_back(6);
-    list.push_back(2);*/
+    list.push_back(2);
     
     string result;
-    result = solution(list, "right");
+    result = solution(list, "left");
 
-    printf("result: %s\n", result);
     return 0;
 }
 
 
 string solution(vector<int> numbers, string hand) {
     string answer = "";
-    
+
     char temp_hand = 'o';
     if (hand == "right")
         temp_hand = 'R';
@@ -191,11 +192,12 @@ string solution(vector<int> numbers, string hand) {
             out = 'R';
             break;
         }
+
         arr[i] = out;
-        answer.append(1, out);
-        //answer = answer + out;
+        //answer.append(1, out);
+        answer = answer + out;
     }
     //answer = answer + '\0';
-    printf("%s: ", answer);
+    cout << answer << endl;
     return answer;
 }
